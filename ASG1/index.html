@@ -12,7 +12,6 @@
         background-color: black;
       }
       .top{
-        text-shadow: 0 0 10px pink;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         color: white
@@ -61,6 +60,39 @@
         font-size: 20px;
         margin-top:0px;
     }
+
+    .dropdown-container {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .dropbtn {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .dropdown-panel {
+      position:fixed;
+      top:0px;
+      left:0px;
+
+        background: #f0f0f0;
+        width: 100vh;
+        overflow: hidden;
+        
+        opacity: 0;
+
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-top: 8px;
+        padding: 0 15px;
+    }
+
+    .dropdown-container:hover .dropdown-panel {
+        height: 80vh;
+        opacity: 1;
+    }
     </style>
   </head>
 
@@ -68,9 +100,19 @@
     <div class = top>
         <h1>TWICE</h1>
         <h3>Official Website for the Nation's Girl Group</h3>
+        
         <button class = btn>
         Learn More
         </button>
+    </div>
+    <div class ="dropdown-container">
+      <button class="dropbtn">Menu</button>
+
+      <div class="dropdown-panel">
+          <h3>Panel Title</h3>
+          <p>This text moves with the panel as it slides down smoothly.</p>
+          <p>You can put anything here: links, images, etc.</p>
+      </div>
     </div>
     <div class="about">
         <h2>About Twice</h2>
