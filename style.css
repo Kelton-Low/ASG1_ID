@@ -1,73 +1,259 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #fffafa;
+background-image: url("TWICE_TEN_The_Story_Goes_On_concept_photo_(2-1).png");
+background-size: contain;
+background-position: center 0px;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navigation */
-nav {
-    background: #ff69b4;
-    padding: 15px;
+.top {
+text-align: center;
+color: white;
+text-shadow: 2px 2px 4px #3a3a3a;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.top h1 {
+font-size: 100px;
+margin-top: 25%;
+margin-bottom: 0px;
 }
-nav a {
-    color: white;
-    text-decoration: none;
+.top h3 {
+font-size: 30px;
+margin-top: 10px;
+}
+
+.btn {
+margin-top: 20px;
+padding: 12px 30px;
+background: #ff4da6;
+border: none;
+border-radius: 8px;
+color: white;
+font-size: 18px;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.btn:hover {
+background: #ff1a8c;
+}
+
+.about {
+color: #303030;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+}
+.about h2 {
+font-size: 40px;
+margin-top: 15%;
+margin-bottom: 0px;
+}
+.about p {
+font-size: 20px;
+margin-top: 0px;
+}
+
+/* Menu button */
+.menu-btn {
+position: fixed;
+border: none;
+background: none;
+top: 60px;
+right: 80px;
+padding: 10px 20px;
+cursor: pointer;
+z-index: 2001;
+}
+
+/* FULL SCREEN PANEL (correct, unified class name) */
+.fullscreen-panel {
+position: fixed;
+top: 0;
+left: 0;
+
+width: 100vw;
+height: 80vh;
+
+background: #f0f0f0;
+
+opacity: 0;
+transform: translateY(-20px);
+pointer-events: none;
+
+transition: opacity 0.35s ease, transform 0.35s ease;
+
+padding: 30px;
+box-sizing: border-box;
+z-index: 2000;
+}
+
+/* When active */
+.fullscreen-panel.active {
+opacity: 1;
+transform: translateY(0);
+pointer-events: auto;
+}
+
+/* Close button */
+.close-btn {
+position: fixed;
+top: 60px;
+right: 80px;
+font-size: 24px;
+cursor: pointer;
+}
+.menu-btn.hidden {
+    display: none;
+}
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+
+background: rgba(0, 0, 0, 0.75); /* dim */
+backdrop-filter: blur(8px); /* blur effect */
+
+opacity: 0;
+pointer-events: none;
+
+transition: opacity 0.35s ease;
+z-index: 1500;
+}
+
+.overlay.active {
+opacity: 1;
+pointer-events: auto;
+}
+
+hr{
+    width: 80vw;
+}
+
+.menu{
+    text-align: center;
+    margin-top: 15vh;
+
+}
+
+.menu-btn-link {
+    border: none;
+    padding: 12px 20px;
+    font-size: 70px;
+    margin: 15px 0;
     font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-/* Hero */
-.hero {
+.menu-btn-link:hover {
+    letter-spacing: 10px;
+    color: pink;
+}
+
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    color:#303030;
+    margin-bottom: 40px;
+}
+.radio img{
+    height: 60vh;
+    width:auto;
+    margin-top: 80px;
+    margin-bottom: 40px;    
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+.radio .twice{
+    text-align: left;
+    font-size: 20px;
+}
+
+.updates{
+    color:#303030;
+    font-size: 40px;
     text-align: center;
-    padding: 80px;
-    background: #ffe4f0;
-}
-.hero h1 {
-    font-size: 50px;
-}
-
-/* General Page Title */
-.page-title {
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Members Grid */
-.member-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 30px;
-}
-.member-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Albums */
-.album-list {
-    padding: 30px;
-}
-.album-card {
-    background: white;
+    margin-top: 100px;
     margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #ff69b4;
-    color: white;
-    margin-top: 40px;
+
+
+.wrapper {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: left; /* keeps text aligned nicely while container stays centered */
+}
+
+
+.event {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 700;
+    width: 80px;
+    color: #000;
+}
+
+.time {
+    font-size: 20px;
+    font-weight: 500;
+    width: 80px;
+    color: #333;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.venue {
+    font-size: 18px;
+    color: #777;
+}
+
+.fa {
+    display: flex;
+    align-items: center;
+  padding: 50px;
+  font-size: 1000px;
+  width: 50px;
+  text-align: center;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.ending{
+    background-color: black;
+    color: gray;
+    padding-top: 20px;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.ending .copyright{
+    text-align: right;
+    padding-top: 100px;
+
 }
