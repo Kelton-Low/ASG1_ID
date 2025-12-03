@@ -130,9 +130,7 @@ opacity: 1;
 pointer-events: auto;
 }
 
-hr{
-    width: 80vw;
-}
+
 
 .menu{
     text-align: center;
@@ -157,6 +155,9 @@ hr{
 }
 
 
+hr{
+    width: 80vw;
+}
 .radio{
     display: flex;
     flex-direction: column;
