@@ -64,3 +64,7 @@ function prevMember() {
   index = (index - 1 + members.length) % members.length;
   updateProfile();
 }
+
+function openLink(url) {
+    window.open(url, "_blank");
+}

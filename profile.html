@@ -2,25 +2,13 @@
 <body>
 
 
-<menu>
-    <button class="menu-btn" onclick="togglePanel()">Menu</button>
+<script src="menu.js"></script>
 
-    <div class="fullscreen-panel" id="panel" onmouseleave="closePanel()">
-      <div class="close-btn" onclick="togglePanel()">✕</div>
-        <div class = "menu">
-          <button class="menu-btn-link" onclick="window.location.href='profile.html'">Profile</button>
-          <br>
-          <button class="menu-btn-link" onclick="window.location.href='profile.html'">Discography</button>
-        </div>
-    </div>
-
-    <div class="overlay" id="overlay" onclick="closePanel()"></div>
-</menu>
 <div class="profile-container">
   <div class="profile-carousel">
     
     <div class="side-label">
-      <span class="number" id="memberNumber">01</span>
+      <span class="number">01</span>
       <div class="line"></div>
       <span class="label">Profile</span>
     </div>
