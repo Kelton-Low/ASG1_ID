@@ -51,7 +51,7 @@ let index = 0;
 function updateProfile() {
   document.getElementById("memberName").textContent = members[index].name;
   document.getElementById("memberBirth").textContent = members[index].birth;
-  document.getElementById("memberImage").src = members[index].img;
+  document.getElementById("memberImage").src ="assets/" + members[index].img;
 
 }
 

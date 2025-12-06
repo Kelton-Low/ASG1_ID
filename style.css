@@ -1,5 +1,188 @@
-body {
-background-image: url("TWICE_TEN_The_Story_Goes_On_concept_photo_(2-1).png");
+/* CENTER EVERYTHING */
+.profile-container {
+    margin-top:20vh;
+    margin-left: 20vw;
+    height: 20vh;
+    width: 80%;
+}
+
+/* CAROUSEL LAYOUT */
+.profile-carousel {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+}
+
+/* SIDE LABEL */
+.side-label {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-label .number {
+    writing-mode: vertical-rl;
+}
+
+.side-label .label {
+    writing-mode: vertical-rl;
+    margin-top: 10px;
+}
+
+.side-label .line {
+    width: 1px;
+    height: 120px;
+    background: black;
+    margin: 15px 0;
+}
+
+/* IMAGE STACK */
+.image-stack {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.bg-box {
+    width: 25vw;
+    height: 32vw;
+    background: #fee5ff;
+    position: absolute;
+    top: -80px;
+    left: -50px;
+}
+
+.image-stack img {
+    width: 25vw;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    left: -20px;
+    box-shadow: 10px 10px 10px #998787;
+    }
+
+.profile-info{
+    text-align: left;
+}
+
+/* TEXT */
+.profile-info h1 {
+    font-size: 60px;
+    font-family: "Impact", sans-serif;
+    margin: 0;
+}
+
+.profile-info p {
+    font-size: 24px;
+    color: #555;
+}
+
+/* ARROWS */
+.arrows button {
+    font-size: 28px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background: white;
+    cursor: pointer;
+}
+
+.arrows button:hover {
+    background: #eee;
+}
+
+@media (max-aspect-ratio: 1/1.3) {
+    .profile-container {
+        margin: 5vh auto;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-carousel {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .side-label {
+        order: -1;
+        margin-bottom: 15px;
+        transform: scale(0.8);
+    }
+
+    .image-stack {
+        width: 70vw;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    .bg-box {
+        width: 70vw;
+        height: 50vw;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .image-stack img {
+        width: 70vw;
+        top: 0;
+        left: 0;
+        box-shadow: 6px 6px 10px #998787;
+        z-index: 1;
+    }
+
+    /* Move profile info below image */
+    .profile-info {
+        
+        order: 1; /* Comes after image */
+        text-align: center;
+        padding: 10px;
+        margin-top: 95vw;
+        z-index: 2;
+    }
+
+    .profile-info h1 {
+        font-size: 100px;
+        margin-bottom: 8px;
+    }
+
+    .profile-info p {
+        font-size: 30px;
+    }
+
+    /* Move arrows below image */
+    .arrows {
+        order: 2; /* Comes after profile info */
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+        z-index: 2;
+    }
+
+    .arrows button {
+        font-size: 22px;
+        padding: 6px 14px;
+    }
+}
+
+/*Main Homepage HTML */
+
+.index{
+background-image: url("assets/TWICE_TEN_The_Story_Goes_On_concept_photo_(2-1).png");
 background-size: contain;
 background-position: center 0px;
 background-repeat: no-repeat;
@@ -167,8 +350,8 @@ hr{
     margin-bottom: 40px;
 }
 .radio img{
-    height: 60vh;
-    width:auto;
+    height: auto;
+    width:50vw;
     margin-top: 80px;
     margin-bottom: 40px;    
     box-shadow: 0 10px 40px rgba(0,0,0,0.3);
@@ -258,3 +441,196 @@ hr{
     padding-top: 100px;
 
 }
+
+.discography{
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    align-items: center;
+}
+
+.album img {
+    width: 22vw;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease;
+}
+
+.album:hover img {
+    transform: scale(1.05);
+    filter: brightness(50%);
+}
+
+.sort-bar{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.meta {
+    margin-left: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.name {
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.side-label {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-label .number {
+    writing-mode: vertical-rl;
+}
+
+.side-label .label {
+    writing-mode: vertical-rl;
+    margin-top: 10px;
+}
+
+.side-label .line {
+    width: 1px;
+    height: 120px;
+    background: black;
+    margin: 15px 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    align-items: center;
+}
+
+.album img {
+    width: 22vw;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease;
+}
+
+.album:hover img {
+    transform: scale(1.05);
+    filter: brightness(50%);
+}
+
+.sort-bar{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.meta {
+    margin-left: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.name {
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.side-label {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-label .number {
+    writing-mode: vertical-rl;
+}
+
+.side-label .label {
+    writing-mode: vertical-rl;
+    margin-top: 10px;
+}
+
+.side-label .line {
+    width: 1px;
+    height: 120px;
+    background: black;
+    margin: 15px 0;
+}
+
+
