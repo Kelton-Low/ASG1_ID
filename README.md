@@ -24,10 +24,15 @@ javascript<br>
 html<br>
 css
 
+## Testing Done
+used the websites to ensure theres no problem with my code
+https://validator.w3.org/
+
 ## Credits:
 Images:
     https://twice.jype.com/Default<br>
     https://commons.wikimedia.org/wiki/File:TWICE_LOGO_UNIVERSAL.png<br>
 Icons:
     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
 
