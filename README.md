@@ -35,3 +35,7 @@ Images:
 Icons:
     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 744cf842dd57b8a0f5327b2024f8b233d9c01363
