@@ -37,4 +37,5 @@ Icons:
 
 
 ## Wireframe
-https://www.figma.com/design/7ZYnSScTJ7t841iE3zOWRQ/Untitled?node-id=0-1&p=f&t=b2GcOPUwdWJBzHbh-0
+
+https://www.figma.com/design/7ZYnSScTJ7t841iE3zOWRQ/ID_S10259721B_LowJiaShen_Assg1_Wireframe?node-id=0-1&p=f&t=b2GcOPUwdWJBzHbh-0
