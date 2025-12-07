@@ -9,6 +9,8 @@ function album(name, date, category, link, img) {
 function openLink(url) {
     window.open(url, "_blank");
 }
+
+
 //Load the info
 let song1 = new album("TEN: The Story Goes On", "2025.10.10", "ALBUM", "https://youtube.com/playlist?list=PLxA687tYuMWiAo1h6vBN0CdsG7KwyzZ8w&si=zmNtGrnQKqDJP4Vt", "46fbf2ccb5164fd3a71f0c5f0b20e2a3-TW_10SP_Onlinecover_0826.jpg")
 let song2 = new album("LIL FANTASY vol.1", "2025.09.12", "SINGLE", "https://youtube.com/playlist?list=PLxA687tYuMWhzPd8lFRhfweJIcXIimho2&si=Hb6DzNwzJdnUcjo4", "dbd954c8bc6741579e629ce931402d4d-CY_1st_LIL+FANTASY+vol.1+Online+Cover_0714.jpg")
@@ -19,6 +21,8 @@ let song6 = new album("NAYEON", "2024.06.14", "SINGLE", "https://youtube.com/pla
 
 const songs = [song1, song2, song3, song4, song5, song6];
 
+
+//Show the songs
 function renderSongs(list) {
     const container = document.querySelector(".container");
     container.innerHTML = "";
@@ -33,7 +37,7 @@ function renderSongs(list) {
         img.src = "assets/" + song.img;
         node.appendChild(img);
 
-        // RIGHT CONTENT
+        // Right content
         const right = document.createElement("div");
 
         const meta = document.createElement("div");
@@ -55,18 +59,18 @@ function renderSongs(list) {
     });
 }
 
-// SORT BY NAME (A → Z)
+// Sort by name
 function sortByName() {
     const sorted = [...songs].sort((a, b) => a.name.localeCompare(b.name));
     renderSongs(sorted);
 }
 
-// SORT BY DATE (Newest first)
+// Sort by date
 function sortByDate() {
     const sorted = [...songs].sort();
     renderSongs(sorted);
 }
 
-// DEFAULT LOAD (alphabetical or date — your choice)
+// Default Load
 sortByDate();
 

@@ -2,97 +2,97 @@
 <html>
   <head>
     <link rel = "stylesheet" href = "style.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="normalize.css" />
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
   <body class = "index">
-    
-    <div class="top">
+    <!--Top Section-->
+    <header class="top">
       <h1>TWICE</h1>
       <h3>Official Website for the Nation's Girl Group</h3>
 
-      <button class="btn">Learn More</button>
-    </div>
+      <button onClick = "window.open('https://twiceshop.com/', '_blank')" class="btn">Support Us!</button>
+    </header>
 
+    <!--menu-->
+    <script src="javascripts/menu.js"></script>
 
-    <script src="menu.js"></script>
-
-    
-    <div class="about">
+    <!--About Section-->
+    <section class="about">
       <h2>About Twice</h2>
       <p>
         Twice is a South Korean girl group formed by JYP Entertainment. The group is composed of nine members: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu. Twice was formed under the television program Sixteen (2015) and debuted on October 20, 2015, with the extended play (EP) The Story Begins.
       </p>
-    </div>
-
+    </section>
+    <!--Radio Section-->
     <hr style = "margin-top: 20px;">
-    <div class = "radio">
+    <section class = "radio">
+      
       <img src="assets/46fbf2ccb5164fd3a71f0c5f0b20e2a3-TW_10SP_Onlinecover_0826.jpg" alt="TEN TOUR">
       <div class="twice">
         TWICE
       </div>
       <b>TEN: The Story Goes On</b>
       <audio controls>
-        <source src="videoplayback.mp3" type="audio/mpeg">
+        <source src="assets/videoplayback.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
       <button class = "btn" onclick="window.open('https:youtube.com/playlist?list=PLxA687tYuMWiAo1h6vBN0CdsG7KwyzZ8w&si=zmNtGrnQKqDJP4Vt', '_blank')">
         Listen Now
       </button>
-    </div>
+    </section>
     <hr>
-
-    <div class="updates">
+    <!--Updates Section-->
+    <section class="updates">
       <b>Updates</b>
-    </div>
-    <div class = "wrapper">
+    </section>
+    <section class = "wrapper">
     <hr>
-    <div class="event">
-        <div class="date">12.07</div>
-        <div class="time">19:00</div>
+    <article class="event">
+        <p class="date">12.07</p>
+        <p class="time">19:00</p>
         <div class="details">
-            <div class="title">THIS IS FOR HONG KONG TOUR</div>
-            <div class="venue">TAK STADIUM</div>
+            <p class="title">THIS IS FOR HONG KONG TOUR</p>
+            <p class="venue">TAK STADIUM</p>
         </div>
-    </div>
+    </article>
     <hr>
-    <div class="event">
-        <div class="date">12.13</div>
-        <div class="time">20:00</div>
+    <article class="event">
+        <p class="date">12.13</p>
+        <p class="time">20:00</p>
         <div class="details">
-            <div class="title">THIS IS FOR BANGKOK TOUR</div>
-            <div class="venue">IMPACT ARENA</div>
+            <p class="title">THIS IS FOR BANGKOK TOUR</p>
+            <p class="venue">IMPACT ARENA</p>
         </div>
-    </div>
+    </article>
     <hr>
-    <div class="event">
-        <div class="date">12.14</div>
-        <div class="time">20:00</div>
+    <article class="event">
+        <p class="date">12.14</p>
+        <p class="time">20:00</p>
         <div class="details">
-            <div class="title">THIS IS FOR BANGKOK TOUR</div>
-            <div class="venue">IMPACT ARENA</div>
+            <p class="title">THIS IS FOR BANGKOK TOUR</p>
+            <p class="venue">IMPACT ARENA</p>
         </div>
-    </div>
+    </article>
     <hr style = "margin-bottom: 200px;">
-    </div>
+    </section>
     
 
     
 
-
-    <div class = "ending">
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-youtube"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-reddit"></a>
+    <!--Ending Section-->
+    <footer class = "ending">
+      <a onclick="window.open('https://www.instagram.com/twicetagram?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')" class="fa fa-instagram"></a>
+      <a onclick="window.open('https://www.youtube.com/@TWICE', '_blank')" class="fa fa-youtube"></a>
+      <a onclick="window.open('https://x.com/JYPETWICE', '_blank')" class="fa fa-twitter"></a>
+      <a onclick="window.open('https://www.reddit.com/r/twice/', '_blank')" class="fa fa-reddit"></a>
       <br>
       <div class = "copyright">
       © 2025 TWICE ALL RIGHTS RESERVED
       </div>
-    </div>
-    <script src = "scripts.js"></script>
+    </footer>
 
   </body>
 </html>

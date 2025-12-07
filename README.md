@@ -14,3 +14,9 @@ javascript
 html
 css
 
+Credits:
+Images:
+    https://twice.jype.com/Default
+    https://commons.wikimedia.org/wiki/File:TWICE_LOGO_UNIVERSAL.png
+Icons:
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
