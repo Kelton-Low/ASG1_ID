@@ -20,13 +20,14 @@ This website would be for their fanbase ONCE, who come here to check out the dif
     - Users can click on various icons and headers in the website to be redirected to the different websites and socials
 
 ## Technologies used
-javascript
-html
+javascript<br>
+html<br>
 css
 
 ## Credits:
 Images:
-    https://twice.jype.com/Default
-    https://commons.wikimedia.org/wiki/File:TWICE_LOGO_UNIVERSAL.png
+    https://twice.jype.com/Default<br>
+    https://commons.wikimedia.org/wiki/File:TWICE_LOGO_UNIVERSAL.png<br>
 Icons:
     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
