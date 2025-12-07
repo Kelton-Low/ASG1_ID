@@ -35,7 +35,6 @@ Images:
 Icons:
     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 744cf842dd57b8a0f5327b2024f8b233d9c01363
+## Wireframe
+https://www.figma.com/design/7ZYnSScTJ7t841iE3zOWRQ/Untitled?node-id=0-1&p=f&t=b2GcOPUwdWJBzHbh-0
